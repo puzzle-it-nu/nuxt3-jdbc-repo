@@ -1,0 +1,26 @@
+{
+  "name": "gbbeheer-nuxt3",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build && cp -pr ./drivers .output/server",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "java": "github:joeferner/node-java#v0.14.0",
+    "nuxt": "^3.10.3",
+    "vue": "^3.4.19",
+    "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "node-jdbc-driver": "^1.3.2",
+    "nodejs-jdbc": "^0.1.4",
+    "sql-ddl-to-json-schema": "^4.1.0"
+  },
+  "overrides": {
+    "java": "$java"
+  }
+}
